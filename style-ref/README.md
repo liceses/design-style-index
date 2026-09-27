@@ -149,6 +149,7 @@ node dev/extract-finals.mjs        ← 按秒数重新导出 img/（1600）与 i
 | `fetch-commons.mjs` | 抓 Wikimedia Commons 候选图（串行节流 + 指数退避） |
 | `build_site_data.py` | 合并内容 + 主色 + 字幕要点 → `data.js` |
 | `check-assets.mjs` | **静态完整性校验，不启动浏览器**。日常改完跑这个 |
+| `verify-live.mjs` | **线上站点验收**：逐 URL 打状态码，并用线上 `data.js` 反查全部 113 张图是否可访问 |
 | `verify-site.mjs` / `cdp-shot.ps1` | 真机交互验收与截图（会拉起 headless Edge；两个脚本都会在运行前/后清理自己的残留实例） |
 
 ---
@@ -182,6 +183,19 @@ node dev/extract-finals.mjs        ← 按秒数重新导出 img/（1600）与 i
 - **全程 0 条 console.error / 未捕获异常**
 
 跑这一轮的进程审计：运行前 24 个 msedge → 运行后 25 个，**属于我的残留 0 个**（脚本会在运行前/后清理 `--headless` / `edge-verify-` / `edge-cdp-` 这一类实例，不碰日常浏览器）。
+
+### 线上站点 —— `node dev/verify-live.mjs`，**12/12 通过**
+
+站点用 GitHub Actions 发布到 GitHub Pages（见仓库根的 `.github/workflows/pages.yml`），发布产物只打包 `style-ref/`，所以线上首页就是 `index.html`，而 `dev/` 不会被发布出去。
+
+**线上地址：<https://liceses.github.io/design-style-index/>**
+
+线上验收逐项打状态码，并用**线上那份 `data.js`** 反查资源：
+
+- 首页 200 且是站点本体（含标题与 `#grid`，不是 README 兜底）；引用的是相对路径资源
+- `styles.css` / `app.js` / `data.js` 均 200 且内容含关键标记（`:root`、`themeBtn`、`window.STYLE_DATA`）
+- 线上 `data.js` 可解析、**41 条风格、31 条含补充图、每条都有字幕原话**
+- **113 张图（41 封面 + 41 缩略图 + 31 补充图）逐个 HEAD 全部 200 且是 image/\***
 
 ### 过程中修掉的真 bug
 
