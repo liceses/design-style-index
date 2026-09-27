@@ -1,0 +1,48 @@
+# 把 style-ref/ 作为静态站点发布到 GitHub Pages
+#
+# 为什么用 Actions 而不是「分支 + /docs」：
+#   站点文件继续留在 style-ref/，脚本里 17 处引用不用改；
+#   发布根 = 构建产物（style-ref/ 的内容），所以线上首页就是 index.html；
+#   而且 dev/（工具链与字幕文本）不会被发布出去。
+#
+# 走 Actions 发布时 GitHub 不做 Jekyll 处理，因此不需要 .nojekyll。
+
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# 允许 GITHUB_TOKEN 部署到 Pages（deploy-pages 用 OIDC 令牌）
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只跑一个部署；正在跑的不打断，避免发布到一半被取消
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact（只打包 style-ref/）
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./style-ref
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

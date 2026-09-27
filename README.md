@@ -8,6 +8,10 @@
 style-ref/index.html     ← 双击就能看（不需要服务器、不需要联网）
 ```
 
+**线上地址：<https://liceses.github.io/design-style-index/>**
+
+发布方式：GitHub Actions 把 `style-ref/` 打包成 Pages 产物（见 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)），推送到 `main` 即自动更新。所以站点文件不必挪到仓库根目录——**发布产物的根目录就是 `index.html`**，而 `dev/`（工具链与字幕文本）不会被发布出去。
+
 ---
 
 ## 仓库结构
