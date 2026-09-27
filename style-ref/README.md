@@ -188,6 +188,8 @@ node dev/extract-finals.mjs        ← 按秒数重新导出 img/（1600）与 i
 
 站点用 GitHub Actions 发布到 GitHub Pages（见仓库根的 `.github/workflows/pages.yml`），发布产物只打包 `style-ref/`，所以线上首页就是 `index.html`，而 `dev/` 不会被发布出去。
 
+workflow 带 `paths` 过滤：只有 `style-ref/**` 或 workflow 自身变动才触发部署，改 `dev/` 不再白跑一次；需要手动重发时用 `workflow_dispatch`。
+
 **线上地址：<https://liceses.github.io/design-style-index/>**
 
 线上验收逐项打状态码，并用**线上那份 `data.js`** 反查资源：
