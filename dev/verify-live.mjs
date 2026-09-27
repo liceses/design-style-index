@@ -1,5 +1,8 @@
 // 线上站点验收：逐个 URL 打状态码，并用线上 data.js 反查所有图片是否都能访问。
 // 用法: node dev/verify-live.mjs [baseUrl]
+//   baseUrl 默认 https://liceses.github.io/design-style-index/
+// 退出码: 0 全通过 / 1 有失败（可直接用在 CI 里）
+// 请求带 3 次重试：CDN 偶发连接失败（CDN 抖动）不应被当成站点问题。
 const BASE = (process.argv[2] || 'https://liceses.github.io/design-style-index/').replace(/\/?$/, '/');
 const results = [];
 const ok = (name, pass, detail) => results.push({ name, pass, detail });
