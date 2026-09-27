@@ -12,6 +12,11 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches: [main]
+    # 只有站点本体或这个 workflow 变动时才发布；
+    # 改 dev/（工具链）之类的提交不必白跑一次部署。
+    paths:
+      - 'style-ref/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 # 允许 GITHUB_TOKEN 部署到 Pages（deploy-pages 用 OIDC 令牌）

@@ -4,12 +4,27 @@ const BASE = (process.argv[2] || 'https://liceses.github.io/design-style-index/'
 const results = [];
 const ok = (name, pass, detail) => results.push({ name, pass, detail });
 
+// 带重试的请求：CDN 偶发连接失败时不要误报
+async function req(url, method, tries = 3) {
+  let lastErr;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const r = await fetch(url, { method, redirect: 'follow' });
+      if (r.status >= 500 && i < tries - 1) { lastErr = new Error('http ' + r.status); }
+      else return r;
+    } catch (e) {
+      lastErr = e;
+    }
+    await new Promise((res) => setTimeout(res, 400 * (i + 1)));
+  }
+  throw lastErr;
+}
 async function head(url) {
-  const r = await fetch(url, { method: 'HEAD', redirect: 'follow' });
+  const r = await req(url, 'HEAD');
   return { status: r.status, type: (r.headers.get('content-type') || '').split(';')[0], len: Number(r.headers.get('content-length') || 0) };
 }
 async function get(url) {
-  const r = await fetch(url, { redirect: 'follow' });
+  const r = await req(url, 'GET');
   return { status: r.status, type: (r.headers.get('content-type') || '').split(';')[0], text: await r.text() };
 }
 
