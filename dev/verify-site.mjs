@@ -314,6 +314,13 @@ main()
     try { ws && ws.close(); } catch {}
     edge.kill('SIGKILL');
     await sleep(400);
-    try { fs.rmSync(ud, { recursive: true, force: true }); } catch {}
     clearStaleHeadless();   // 兜底：确保不留孤儿进程
+    // 删掉临时 profile：浏览器释放句柄要一点时间，重试到真的删掉为止。
+    // 不删的话 TEMP 里会累积 400MB+ 的目录。
+    for (let i = 0; i < 10; i++) {
+      try { fs.rmSync(ud, { recursive: true, force: true }); } catch { /* 句柄未释放 */ }
+      if (!fs.existsSync(ud)) break;
+      await sleep(700);
+    }
+    if (fs.existsSync(ud)) console.error('注意：临时 profile 未能删除 -> ' + ud);
   });

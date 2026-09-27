@@ -47,5 +47,11 @@ try {
     Where-Object { $_.CommandLine -like "*$ud*" } |
     ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
   Clear-StaleHeadless   # 再兜一次底，确保不留孤儿进程
+  # 删掉本次的临时 profile。不删的话会在 TEMP 里累积 —— 每个 30~450MB，
+  # 跑几十次就是几个 GB。浏览器释放文件句柄需要一点时间，所以重试几次。
+  foreach ($i in 1..8) {
+    try { Remove-Item -LiteralPath $ud -Recurse -Force -ErrorAction Stop; break }
+    catch { Start-Sleep -Milliseconds 600 }
+  }
 }
 exit $code
