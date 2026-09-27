@@ -1,0 +1,423 @@
+{
+  "_note": "风格内容主数据。en = 视频时间轴里的写法；videoName = 视频标题卡上实际印出的字样（已目视确认）；t = 视频时间点(秒)。",
+  "groups": [
+    { "id": "classical", "zh": "古典与装饰", "desc": "从历史装饰语汇里取材：秩序、曲线、金属与繁复。" },
+    { "id": "painting", "zh": "绘画与拼贴", "desc": "以画面本身说话：笔触、光影、材料与梦。" },
+    { "id": "modern", "zh": "现代主义与平面", "desc": "给平面设计用的语言：网格、几何、排版与克制。" },
+    { "id": "digital", "zh": "数字与街头", "desc": "屏幕与街道长出来的美学：像素、霓虹、喷漆。" },
+    { "id": "soft", "zh": "柔光与生活", "desc": "关于氛围与生活方式：光、材质、柔软与克制。" },
+    { "id": "bonus", "zh": "视频加映", "desc": "视频结尾额外给的一种风格。" }
+  ],
+  "styles": [
+    {
+      "slug": "neoclassical",
+      "en": "Neoclassical",
+      "videoName": "NEOCLASSICAL ART",
+      "zh": "新古典主义",
+      "group": "classical",
+      "t": 51,
+      "desc": "从古希腊罗马的秩序里取形：严格对称、柱式与三角楣、大理石白与赭石，配古典衬线体。用来表达权威、传承与庄重。",
+      "traits": ["严格对称", "柱式·三角楣", "大理石白·赭石", "古典衬线"]
+    },
+    {
+      "slug": "baroque",
+      "en": "Baroque",
+      "videoName": "Baroque",
+      "zh": "巴洛克",
+      "group": "classical",
+      "t": 117,
+      "desc": "用\"更多\"表达权力与激情：卷草曲线、金箔与厚重画框、斜向流动的构图、强烈的明暗对撞。装饰本身就是主角。",
+      "traits": ["卷草曲线", "金箔·厚画框", "强明暗对撞", "斜向动势"]
+    },
+    {
+      "slug": "filigree",
+      "en": "Filigree",
+      "videoName": "FILIGREE",
+      "zh": "金细丝",
+      "group": "classical",
+      "t": 246,
+      "desc": "极细的金银丝工艺：细密卷曲的金属线、镂空结构、深色底上的描金线条。精致感来自\"线\"本身。",
+      "traits": ["细金线", "镂空结构", "深底描金", "卷曲对称"]
+    },
+    {
+      "slug": "acanthus",
+      "en": "Acanthus",
+      "videoName": "ACANTHUS",
+      "zh": "茛苕叶",
+      "group": "classical",
+      "t": 289,
+      "desc": "古典柱头与边框上的茛苕叶母题：叶片卷曲、重复铺排、带浮雕厚度。是西方装饰体系里最基础的一片叶子。",
+      "traits": ["茛苕叶母题", "重复铺排", "浮雕厚度", "角饰边框"]
+    },
+    {
+      "slug": "victorian",
+      "en": "Victorian",
+      "videoName": "VICTORIAN",
+      "zh": "维多利亚",
+      "group": "classical",
+      "t": 724,
+      "desc": "19 世纪的繁复礼仪感：花体衬线、黑底金线、对称花框、密密麻麻的细节。第一眼就要\"贵\"。",
+      "traits": ["花体衬线", "黑底金框", "对称构图", "繁复细节"]
+    },
+    {
+      "slug": "art-deco",
+      "en": "Art Deco",
+      "videoName": "ART DECO",
+      "zh": "装饰艺术",
+      "group": "classical",
+      "t": 761,
+      "desc": "机器时代的几何奢华：放射线、阶梯状轮廓、严格对称的几何图案，配色常见金与墨绿、黑与奶油。",
+      "traits": ["放射线", "阶梯几何", "严格对称", "金·墨绿"]
+    },
+    {
+      "slug": "art-nouveau",
+      "en": "Art Nouveau",
+      "videoName": "ART NOUVEAU",
+      "zh": "新艺术",
+      "group": "classical",
+      "t": 794,
+      "desc": "从植物与女性身体曲线里长出来的线条：连绵的鞭形曲线、有机边框把主体围起来、穆夏式的装饰人物。",
+      "traits": ["鞭形曲线", "有机边框", "穆夏式人物", "手绘轮廓"]
+    },
+    {
+      "slug": "gothic",
+      "en": "Gothic",
+      "videoName": "GOTHIC",
+      "zh": "哥特",
+      "group": "classical",
+      "t": 1318,
+      "desc": "阴暗、尖拱与神秘：尖拱与玫瑰窗母题、深色配血红、黑体与花体混排，适合表达超自然与不安。",
+      "traits": ["尖拱母题", "深色·血红", "黑体+花体", "超自然气"]
+    },
+    {
+      "slug": "steampunk",
+      "en": "Steampunk",
+      "videoName": "STEAMPUNK",
+      "zh": "蒸汽朋克",
+      "group": "classical",
+      "t": 1455,
+      "desc": "维多利亚加蒸汽机械的幻想：黄铜齿轮、皮革与铜绿、繁复的机械结构、旧式衬线体做标题。",
+      "traits": ["黄铜齿轮", "皮革·铜绿", "机械繁复", "维多利亚底"]
+    },
+    {
+      "slug": "tenebrism",
+      "en": "Tenebrism",
+      "videoName": "Tenebrism",
+      "zh": "暗色调主义",
+      "group": "painting",
+      "t": 1277,
+      "desc": "把光压成一把刀：背景近乎全黑，只用单侧硬光雕出主体，极端明暗比带来舞台般的戏剧感。",
+      "traits": ["近黑背景", "单侧硬光", "极端明暗比", "戏剧舞台感"]
+    },
+    {
+      "slug": "pointilism",
+      "en": "Pointilism",
+      "videoName": "POINTILLISM",
+      "zh": "点彩",
+      "group": "painting",
+      "t": 1368,
+      "desc": "用密密麻麻的小色点堆出画面，靠眼睛把颜色混起来；同时天然带着网点/半调的印刷质感。",
+      "traits": ["细密色点", "光学混色", "网点半调", "朦胧边界"]
+    },
+    {
+      "slug": "surrealism",
+      "en": "Surrealism",
+      "videoName": "SURREALISM DESIGN",
+      "zh": "超现实主义",
+      "group": "painting",
+      "t": 1601,
+      "desc": "把不相干的东西放进同一个梦：尺度错置、物体拼接、日常之物被陌生化。逻辑服从梦境。",
+      "traits": ["尺度错置", "物体拼接", "梦境逻辑", "日常陌生化"]
+    },
+    {
+      "slug": "mixed-media",
+      "en": "Mixed Media",
+      "videoName": "MIXED MEDIA",
+      "zh": "混合媒介",
+      "group": "painting",
+      "t": 1417,
+      "desc": "把不同材料放进同一张画面：撕纸边缘、摄影与手绘叠加、层层拼贴，质感冲突本身就是内容。",
+      "traits": ["撕纸边缘", "摄影+手绘", "层叠拼贴", "材质对比"]
+    },
+    {
+      "slug": "anthropomorphic",
+      "en": "Anthropomorphic",
+      "videoName": "ANTHROPOMORPHIC",
+      "zh": "拟人化",
+      "group": "painting",
+      "t": 322,
+      "desc": "给动物、器物、自然物装上人的形体与表情：拟人角色、动物穿人类衣装、夸张情绪，天然适合叙事插画。",
+      "traits": ["拟人角色", "人形动物", "夸张表情", "叙事插画"]
+    },
+    {
+      "slug": "conceptual-sketch",
+      "en": "Conceptual Sketch",
+      "videoName": "CONCEPTUAL SKETCH",
+      "zh": "概念草图",
+      "group": "painting",
+      "t": 432,
+      "desc": "像草稿本上撕下来的一页：单色线稿、指示箭头、手写批注、故意留着的\"没画完\"。",
+      "traits": ["单色线稿", "箭头+批注", "手绘不规整", "构思中"]
+    },
+    {
+      "slug": "pop-art",
+      "en": "Pop Art",
+      "videoName": "POP ART",
+      "zh": "波普艺术",
+      "group": "painting",
+      "t": 1175,
+      "desc": "把大众图像直接搬进艺术：粗描边、网点、原色平涂、漫画式重复排列，明快且大声。",
+      "traits": ["粗描边", "网点", "原色平涂", "漫画式重复"]
+    },
+    {
+      "slug": "kitsch",
+      "en": "Kitsch",
+      "videoName": "KITSCH",
+      "zh": "媚俗",
+      "group": "painting",
+      "t": 887,
+      "desc": "明知俗气而为之：高饱和、廉价塑料感、怀旧符号层层堆叠，甜得发腻——但要的就是这个效果。",
+      "traits": ["高饱和", "廉价塑料感", "怀旧符号", "甜腻反讽"]
+    },
+    {
+      "slug": "bauhaus",
+      "en": "Bauhaus",
+      "videoName": "BAUHAUS",
+      "zh": "包豪斯",
+      "group": "modern",
+      "t": 992,
+      "desc": "形式追随功能：红黄蓝加黑、只用基本几何形、无衬线体的网格排版、把装饰全部删掉。",
+      "traits": ["红黄蓝+黑", "基本几何", "无衬线网格", "彻底去装饰"]
+    },
+    {
+      "slug": "brutalism",
+      "en": "Brutalism",
+      "videoName": "BRUTALISM",
+      "zh": "粗野主义",
+      "group": "modern",
+      "t": 1028,
+      "desc": "把材料与结构裸露出来：裸露混凝土或裸排版、粗黑边框、不加修饰的默认字体，反精致。",
+      "traits": ["裸露结构", "粗黑边框", "默认字体", "反精致"]
+    },
+    {
+      "slug": "mid-century",
+      "en": "Mid Century",
+      "videoName": "MID CENTURY",
+      "zh": "世纪中叶现代",
+      "group": "modern",
+      "t": 1678,
+      "desc": "战后乐观的现代主义：暖木色与芥末黄、抽象有机几何、细长的无衬线体，带一点印刷颗粒。",
+      "traits": ["暖木·芥末黄", "有机几何", "细长无衬线", "印刷颗粒"]
+    },
+    {
+      "slug": "utilitarian",
+      "en": "Utilitarian",
+      "videoName": "UTILITARIANISM",
+      "zh": "功利主义",
+      "group": "modern",
+      "t": 1636,
+      "desc": "以好用为唯一准绳：没有装饰、字大到不容忽视、黑白高对比、信息永远排在美观前面。",
+      "traits": ["零装饰", "直白大字", "黑白高对比", "信息优先"]
+    },
+    {
+      "slug": "luxury-typography",
+      "en": "Luxury Typography",
+      "videoName": "LUXURY",
+      "zh": "奢华字体",
+      "group": "modern",
+      "t": 492,
+      "desc": "让排版本身显得昂贵：极高对比的现代衬线体、宽字距、大片留白、金色字压在深色或实景底图上。",
+      "traits": ["高对比衬线", "宽字距", "大片留白", "金字压图"]
+    },
+    {
+      "slug": "3x3-grid",
+      "en": "3x3 Grid",
+      "videoName": "3X3 GRID DESIGN",
+      "zh": "九宫格",
+      "group": "modern",
+      "t": 922,
+      "desc": "把内容收进 3×3 的九格：规则分格、中心对称、图标配短标签、每个格子分量相等。",
+      "traits": ["3×3 分格", "强对齐", "图标+短标签", "秩序感"]
+    },
+    {
+      "slug": "bento-box",
+      "en": "Bento Box",
+      "videoName": "BENTO GRID",
+      "zh": "便当盒",
+      "group": "modern",
+      "t": 1216,
+      "desc": "用大小不一的圆角格子组织界面：层级明确、一屏之内讲完所有事，像便当盒的分格。",
+      "traits": ["圆角格子", "明确层级", "一屏总览", "模块化"]
+    },
+    {
+      "slug": "mystical-western",
+      "en": "Mystical Western",
+      "videoName": "MYSTICAL WESTERN",
+      "zh": "神秘西部",
+      "group": "modern",
+      "t": 839,
+      "desc": "美国西部加神秘学：沙色与晚霞渐变、太阳与塔罗图腾、老式票据/木刻字体、粗描边的插画。",
+      "traits": ["沙色·晚霞", "图腾与塔罗", "票据木刻字", "粗描边插画"]
+    },
+    {
+      "slug": "pixel-art",
+      "en": "Pixel Art",
+      "videoName": "PIXEL ART",
+      "zh": "像素艺术",
+      "group": "digital",
+      "t": 387,
+      "desc": "以看得见的方块为最小单位作画：低分辨率网格、有限调色板、用抖动（dithering）来过渡颜色。",
+      "traits": ["像素网格", "有限调色板", "抖动过渡", "复古游戏感"]
+    },
+    {
+      "slug": "y2k",
+      "en": "Y2K",
+      "videoName": "Y2K",
+      "zh": "千禧年",
+      "group": "digital",
+      "t": 959,
+      "desc": "2000 年前后的科技乐观：亮蓝与银、气泡与半透明外壳、金属渐变、圆润的科技字体。",
+      "traits": ["亮蓝·银", "气泡透明感", "金属渐变", "圆润科技字"]
+    },
+    {
+      "slug": "cybercore",
+      "en": "Cybercore",
+      "videoName": "CYBERCORE",
+      "zh": "赛博核心",
+      "group": "digital",
+      "t": 1068,
+      "desc": "数字化、故障与监控感：荧光绿、扫描线与画面错位、界面/HUD 叠加在人像上，冷硬且不安。",
+      "traits": ["荧光绿", "扫描线·故障", "HUD 叠加", "冷硬不安"]
+    },
+    {
+      "slug": "synthwave",
+      "en": "Synthwave",
+      "videoName": "SYNTHWAVE",
+      "zh": "合成波",
+      "group": "digital",
+      "t": 1107,
+      "desc": "对 80 年代电子乐的怀旧：紫粉霓虹、网格地平线、镀铬反光字、夕阳渐变，一切都在发光。",
+      "traits": ["紫粉霓虹", "网格地平线", "镀铬字", "夕阳渐变"]
+    },
+    {
+      "slug": "vaporwave",
+      "en": "Vaporwave",
+      "videoName": "VAPORWAVE",
+      "zh": "蒸汽波",
+      "group": "digital",
+      "t": 1140,
+      "desc": "对消费主义与早期互联网的暧昧怀旧：粉紫渐层、古典雕像、旧系统窗口、日文乱入，拼贴成失落的商场。",
+      "traits": ["粉紫渐层", "古典雕像", "旧界面元素", "日文拼贴"]
+    },
+    {
+      "slug": "memphis",
+      "en": "Memphis",
+      "videoName": "MEMPHIS",
+      "zh": "孟菲斯",
+      "group": "digital",
+      "t": 580,
+      "desc": "80 年代意大利的反叛设计：高饱和撞色、几何碎形随意撒、故意\"俗\"的图案，压在黑网格上。",
+      "traits": ["高饱和撞色", "几何碎形", "故意失衡", "黑网格底"]
+    },
+    {
+      "slug": "graffiti",
+      "en": "Graffiti",
+      "videoName": "GRAFFITI",
+      "zh": "涂鸦",
+      "group": "digital",
+      "t": 1247,
+      "desc": "街头的喷漆书写：气泡字与立体字、极粗描边、喷溅与叠涂的肌理、亮到刺眼的撞色。",
+      "traits": ["气泡·立体字", "极粗描边", "喷溅肌理", "高亮撞色"]
+    },
+    {
+      "slug": "aurora",
+      "en": "Aurora",
+      "videoName": "AURORA",
+      "zh": "极光",
+      "group": "soft",
+      "t": 155,
+      "desc": "直接向自然借色：青绿到紫红的渐变光带、柔和扩散的光晕、深色背景把光托起来。",
+      "traits": ["青绿→紫红", "发光光带", "深底衬托", "柔焦扩散"]
+    },
+    {
+      "slug": "ethereal",
+      "en": "Ethereal",
+      "videoName": "ETHEREAL",
+      "zh": "空灵",
+      "group": "soft",
+      "t": 199,
+      "desc": "半透明、雾化、若隐若现：低对比、光在雾里散开、主体像浮着——像隔一层薄纱看东西。",
+      "traits": ["半透明", "雾化扩散", "低对比", "漂浮感"]
+    },
+    {
+      "slug": "japandi",
+      "en": "Japandi",
+      "videoName": "JAPANDI",
+      "zh": "日式北欧",
+      "group": "soft",
+      "t": 540,
+      "desc": "日本侘寂与北欧极简的交集：米白与木色、低矮家具、亚麻与陶土、克制的留白与秩序。",
+      "traits": ["米白·木色", "低矮家具", "亚麻陶土", "留白秩序"]
+    },
+    {
+      "slug": "bohemian",
+      "en": "Bohemian",
+      "videoName": "BOHEMIAN",
+      "zh": "波西米亚",
+      "group": "soft",
+      "t": 615,
+      "desc": "层叠、混搭、手工艺：拱形与地毯纹样、暖土色、植物与藤编，用\"不规则的丰富\"代替整齐。",
+      "traits": ["暖土色", "拱形母题", "层叠混搭", "手工艺感"]
+    },
+    {
+      "slug": "shabby-chic",
+      "en": "Shabby Chic",
+      "videoName": "SHABBY CHIC",
+      "zh": "复古做旧",
+      "group": "soft",
+      "t": 660,
+      "desc": "故意磨损的优雅：褪色的印花、做旧白漆、蕾丝与玫瑰，整体罩一层柔粉。",
+      "traits": ["褪色印花", "做旧白漆", "蕾丝玫瑰", "柔粉罩色"]
+    },
+    {
+      "slug": "farmhouse",
+      "en": "Farmhouse",
+      "videoName": "FARMHOUSE",
+      "zh": "农舍",
+      "group": "soft",
+      "t": 688,
+      "desc": "乡村田园的朴素：奶油底、手绘小插图（蘑菇、搪瓷壶、小木屋）、旧式字体做标题。",
+      "traits": ["奶油底", "手绘插图", "木与搪瓷", "旧式字体"]
+    },
+    {
+      "slug": "kawaii",
+      "en": "Kawaii",
+      "videoName": "KAWAII",
+      "zh": "可爱",
+      "group": "soft",
+      "t": 1521,
+      "desc": "把\"可爱\"当成核心策略：圆润到没有棱角的造型、粉彩色、小动物与甜点、绝对无害的表情。",
+      "traits": ["圆润造型", "粉彩色", "小动物甜点", "无害表情"]
+    },
+    {
+      "slug": "coquette",
+      "en": "Coquette",
+      "videoName": "Coquette",
+      "zh": "娇媚",
+      "group": "soft",
+      "t": 1567,
+      "desc": "丝带、蕾丝与柔粉的女性化甜美：粉与酒红、蝴蝶结、蕾丝纹理、手写体花字。",
+      "traits": ["粉·酒红", "蝴蝶结", "蕾丝纹理", "手写花字"]
+    },
+    {
+      "slug": "scrapbook",
+      "en": "Bonus Style — Scrapbook",
+      "videoName": "SCRAPBOOK COLLAGE",
+      "zh": "拼贴手账（加映）",
+      "group": "bonus",
+      "t": 1715,
+      "desc": "视频结尾额外给的风格：拍立得照片、纸胶带、手写标注、剪纸字母一层层贴起来，私人且手工。",
+      "traits": ["拍立得照片", "纸胶带·剪纸", "手写标注", "层叠拼贴"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# 另一个项目（GRID PILLARS，有自己的 git 仓库）——不属本仓库
+/grid-pillars/
+
+# 本机开发时的截图/临时目录
+/.dsh/
+
+# 大体积中间产物：原始视频、公开图候选、联系表
+# 这些都能用 dev/ 下的脚本重新生成，不入库（视频单文件 207MB，超过 GitHub 限制）
+/dev/style-video/
+/dev/pd-cand/
+/dev/sheets/
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
+*.tmp

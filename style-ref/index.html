@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>40 种设计风格 · 参考图鉴</title>
+<meta name="description" content="B 站视频《你一直在寻找的 40 种设计风格名称》的静态参考图鉴：40 种设计风格 + 1 种加映，每种配视频原帧与公开版权参考图。">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem('styleref.theme'); } catch (e) {}
+  var t;
+  if (saved === 'light' || saved === 'dark') { t = saved; }
+  else {
+    try { t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; }
+    catch (e) { t = 'dark'; }
+  }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+</head>
+<body>
+
+<div class="glow" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero__text">
+    <p class="kicker">风格参考 · STYLE INDEX</p>
+    <h1>你一直在寻找的<br><em>40 种设计风格</em></h1>
+    <p class="lede">
+      整理自 B 站视频《你一直在寻找的 40 种设计风格名称（更快地找到参考）》。
+      每一种都给出来源视频里的画面、名称与一句话特征——先看图认风格，再决定用哪个。
+    </p>
+    <p class="src">
+      素材来源
+      <a id="videoLink" href="#" target="_blank" rel="noopener noreferrer">原视频 ↗</a>
+      <span class="dot">·</span>
+      <span id="srcNote">配图为视频原帧截图（1080P 源），版权归原作者</span>
+    </p>
+  </div>
+  <dl class="stats" id="stats"></dl>
+</header>
+
+<div class="bar">
+  <div class="bar__inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="搜索风格名 / 中文名 / 特征…（按 / 聚焦）" aria-label="搜索风格">
+      <button id="qClear" class="search__clear" type="button" hidden aria-label="清空">✕</button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="按分组筛选"></div>
+    <div class="bar__tools">
+      <button id="themeBtn" class="tool tool--theme" type="button"
+              aria-label="切换浅色与深色模式" title="切换浅色 / 深色（首次打开跟随系统）"></button>
+      <button id="sortBtn" class="tool" type="button" title="切换排序">视频顺序</button>
+      <button id="randBtn" class="tool" type="button" title="随机打开一种风格">随机一种</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="count" id="count"></p>
+  <section class="grid" id="grid" aria-live="polite"></section>
+  <p class="empty" id="empty" hidden>没有匹配的风格——换个词或点「全部」试试。</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>
+      41 张封面均从原视频逐帧挑选（1080P 源，含加映）<span id="refStat"></span>。
+      详情页的「创作者原话 / 来源 / 今天用在哪」提炼自<span class="hl">上传者本人制作的中文 CC 字幕</span>（484 条，非 AI 转写），按时间码对齐到各个风格段落。
+      风格名以视频标题卡上的写法为准，卡片里的一句话摘要由整理者编写。
+    </p>
+    <p class="foot__meta">
+      <a id="videoLink2" href="#" target="_blank" rel="noopener noreferrer">原视频</a>
+      <span class="dot">·</span>静态站点，无构建、无后端、可离线打开
+    </p>
+  </div>
+</footer>
+
+<div class="detail" id="detail" hidden role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="detail__scrim" data-close></div>
+  <article class="detail__panel" id="dPanel">
+    <button class="detail__close" type="button" data-close aria-label="关闭（Esc）">✕</button>
+    <div class="detail__media" id="dMedia"></div>
+    <div class="detail__body">
+      <p class="detail__eyebrow"><span id="dN"></span><span id="dGroup"></span></p>
+      <h2 class="detail__title" id="dTitle"></h2>
+      <p class="detail__zh" id="dZh"></p>
+      <p class="detail__desc" id="dDesc"></p>
+      <blockquote class="say" id="dSay" hidden>
+        <p id="dSayText"></p>
+        <cite id="dSayFrom"></cite>
+      </blockquote>
+      <dl class="facts" id="dFacts" hidden>
+        <div id="dOriginRow"><dt>来源</dt><dd id="dOrigin"></dd></div>
+        <div id="dUsageRow"><dt>今天用在哪</dt><dd id="dUsage"></dd></div>
+      </dl>
+      <ul class="detail__tips" id="dTips" hidden></ul>
+      <ul class="detail__traits" id="dTraits"></ul>
+      <div class="detail__links" id="dLinks"></div>
+      <div class="detail__actions">
+        <button id="copyBtn" class="btn" type="button">复制风格要点</button>
+        <a id="videoBtn" class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">在视频中查看 ↗</a>
+      </div>
+      <nav class="detail__nav">
+        <button id="prevBtn" class="navbtn" type="button"><span>← 上一种</span><b id="prevName"></b></button>
+        <button id="nextBtn" class="navbtn navbtn--r" type="button"><span>下一种 →</span><b id="nextName"></b></button>
+      </nav>
+    </div>
+  </article>
+</div>
+
+<p class="toast" id="toast" hidden></p>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

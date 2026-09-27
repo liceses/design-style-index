@@ -1,0 +1,100 @@
+=== 候选元数据（复核用） ===
+3x3-grid             c1.jpg  10676x5312  CC BY 4.0        Grid - estrutura para alinhamentos.png
+3x3-grid             c2.jpg  7667x4071  AGPL             Screenshot HTML+CSS Grid 2024-09-16 170544.png
+3x3-grid             c3.jpg  2256x1320  CC BY-SA 4.0     Karl Gerstner Capital layout grid.png
+acanthus             c1.jpg  5976x3406  CC BY-SA 4.0     Feldkirchen Hauptplatz 2 Bürgerhaus Handlungshaus Polsterhaus 04062018 3
+acanthus             c2.jpg  4904x3264  CC BY-SA 4.0     Feldkirchen Hauptplatz 2 Akanthusstuckfeld Madonnenmedaillon um 1700 020
+acanthus             c3.jpg  4928x3280  CC BY-SA 4.0     Feldkirchen Hauptplatz 2 Akanthusstuckfeld Madonnenmedaillon um 1700 280
+anthropomorphic      c1.jpg  4263x2471  CC0              Navagraha (anthropomorphic forms of astronomical bodies), Bihar, India, 
+art-deco             c1.jpg  3342x2034  CC BY-SA 4.0     Julia Keilowa Art Deco silver-plated bowl with glass insert Polish moder
+art-deco             c2.jpg  3402x2252  CC BY-SA 4.0     2025.07.25 Private Collection Tatiana Markina Art Deco Jardiniere Horste
+art-deco             c3.jpg  3817x2678  CC BY-SA 4.0     La Madeleine hotel art deco cote.jpg
+art-nouveau          c1.jpg  6016x4000  CC BY-SA 4.0     Art Nouveau Riga 46.jpg
+art-nouveau          c2.jpg  6000x4000  CC BY-SA 4.0     Jugendstil-Flaschenhalter auf schwarzem Hintergrund.jpg
+art-nouveau          c3.jpg  3873x2592  CC BY-SA 4.0     Olomouc - Riegrova - Art Nouveau Architecture 02.jpg
+aurora               c1.jpg  8095x3662  CC BY 4.0        Maardu Northern lights — Estonia, 2022.jpg
+aurora               c2.jpg  4000x2351  CC BY-SA 4.0     Virmalised 15.09.2017 - Aurora Borealis 15.09.2017 copy.jpg
+aurora               c3.jpg  5000x3142  CC BY-SA 4.0     Virmalised 18.03.15 (2).jpg
+baroque              c1.jpg  4598x2678  CC BY-SA 4.0     Baroque ceiling frescoes (Ljubljana Cathedral).jpg
+baroque              c2.jpg  3159x2369  CC BY-SA 4.0     Baroque paintings (1600-1750) in the Staatsgalerie Bamberg 02.jpg
+baroque              c3.jpg  3639x2729  CC BY-SA 4.0     Baroque paintings (1600-1750) in the Staatsgalerie Bamberg 01.jpg
+bauhaus              c1.jpg  3830x1820  CC BY-SA 4.0     Außenansichten des Bauhaus-Gebäudes in Dessau 04.jpg
+bauhaus              c2.jpg  3653x1903  CC BY-SA 4.0     Außenansichten des Bauhaus-Gebäudes in Dessau 06.jpg
+bauhaus              c3.jpg  6202x3876  FAL              Dessau Bauhaus-Gebäude asv2024-06 img1.jpg
+bento-box            c1.jpg  4608x2592  CC BY-SA 4.0     Bento 20210305 114446.jpg
+bento-box            c2.jpg  3812x2536  Public domain    SÉRIE A - PALMEIRAS 0 X 2 ATHLETICO PARANAENSE - Bento cobrando tiro de 
+bento-box            c3.jpg  9248x6936  CC BY 4.0        Handmade bento 03.jpg
+bohemian             c1.jpg  1934x1321  CC BY-SA 4.0     Katholische Kirche, 2026 Kistarcsa.jpg
+bohemian             c2.jpg  1993x1495  CC BY-SA 4.0     Katholische Kirche, Tympanon, 2026 Kistarcsa.jpg
+bohemian             c3.jpg  1984x1488  Public domain    Kladno Chateau CZ 002.jpg
+brutalism            c1.jpg  3000x1285  CC BY-SA 4.0     Brutalist architecture of UMass Dartmouth.jpg
+brutalism            c2.jpg  6000x4000  CC0              Brutalist architecture, Ashford, Kent.jpg
+brutalism            c3.jpg  4096x2732  CC BY 4.0        Mario Kleff – Unbuilt Brutalist Office Design (2011).jpg
+conceptual-sketch    c1.jpg  1280x663  CC BY 2.0        Conceptual drawing of the NIRPS instrument (36788574832).jpg
+conceptual-sketch    c2.jpg  1500x845  Public domain    1915 - Allentown High School Conceptual Drawing Allentown PA.jpg
+conceptual-sketch    c3.jpg  1331x747  CC BY-SA 4.0     Conceptual Drawing Of The King Residence In Adulis by Dr Daniel Habtemic
+coquette             c1.jpg  3635x1734  CC BY-SA 4.0     Panneau Entrée Marnes Coquette Rue Georges Xavier Schlumberger - Marnes-
+coquette             c2.jpg  5846x4133  CC BY-SA 4.0     92047-Marnes-la-Coquette-Hydro.jpeg
+coquette             c3.jpg  4032x3024  CC BY-SA 3.0     Arrêt Gare de Garches - Marnes-la-Coquette - Direction La Défense.jpg
+cybercore            c1.jpg  7680x4320  CC0              CP2077LOGO.jpg
+cybercore            c2.jpg  2048x1121  CC BY-SA 4.0     Cyberpunk City.jpg
+cybercore            c3.jpg  3840x2275  CC BY-SA 2.0     Cyberpunk city (4065413356).jpg
+ethereal             c1.jpg  2737x1428  Public domain    Such visions of ethereal splendor belong to the eagle only and to him wh
+ethereal             c2.jpg  2737x1428  Public domain    Such visions of ethereal splendor belong to the eagle only and to him wh
+ethereal             c3.jpg  3200x1858  CC BY 2.0        Ethereal landscapes from lost times - Flickr - subarcticmike.jpg
+farmhouse            c1.jpg  5312x2988  CC BY-SA 4.0     Waldstatt Brunnhalden 25.jpg
+farmhouse            c2.jpg  5312x2988  CC BY-SA 4.0     Herisau Baldenwil 2607.jpg
+farmhouse            c3.jpg  6240x4160  CC BY-SA 4.0     Nageldach53.jpg
+filigree             c1.jpg  2190x1222  CC BY-SA 4.0     Cufflink Filigree.jpg
+filigree             c2.jpg  4696x3084  CC BY 2.0        Battery Point filigree 2015.jpg
+filigree             c3.jpg  2584x1715  CC BY-SA 4.0     Cufflink Filigree2.jpg
+gothic               c1.jpg  3626x2152  CC BY-SA 4.0     Limburg an der Lahn - Limburger Schloss - Gothic architecture - Reconstr
+gothic               c3.jpg  8533x5591  CC BY-SA 4.0     Iglesia de San Miguel, Jerez de la Frontera, España, 2015-12-07, DD 105-
+graffiti             c1.jpg  7665x5110  FAL              Berlin Siemensbahn at Siemensstadt asv2021-03 img5.jpg
+graffiti             c2.jpg  5199x3466  CC BY-SA 4.0     Graffiti in Freiham 02.jpg
+graffiti             c3.jpg  5000x3335  CC BY 4.0        Staircase of Liesikuja parking hall in Myyrmäki, Vantaa, Finland, 2022 M
+japandi               (无候选)
+kawaii                (无候选)
+kitsch               c1.jpg  3545x1767  CC BY-SA 4.0     Stuff sold at Bazarul cu Amintiri 13.jpg
+kitsch               c2.jpg  4039x2857  CC BY-SA 2.0     Kitsch Buddhas (8569927671).jpg
+kitsch               c3.jpg  3767x2761  CC BY-SA 4.0     Kitsch, kitsch, kitsch.jpg
+luxury-typography    c1.jpg  1200x884  Public domain    Poster XXX. Výstava SPU Mánes 1909.jpg
+luxury-typography    c2.jpg  1200x893  Public domain    Poster XXXIII. Výstava SPU Mánes 1910.jpg
+memphis              c1.jpg  4872x3392  CC BY 3.0        Memphis e altri, arredo, 01.jpg
+memphis              c2.jpg  2048x1356  CC BY 2.0        Memphis Design Paris 2008-09- 1239.jpg
+memphis              c3.jpg  2048x1365  CC BY-SA 3.0     Memphis-Milano Movement.jpg
+mixed-media           (无候选)
+mystical-western     c1.jpg  6000x4000  CC BY 2.0        The National Museum of Western Art (53134225443).jpg
+mystical-western     c2.jpg  6000x4000  CC BY 2.0        The National Museum of Western Art (53134225583).jpg
+mystical-western     c3.jpg  6000x4000  CC BY 2.0        The National Museum of Western Art (53134225638).jpg
+neoclassical         c1.jpg  4018x2389  Public domain    Night A Port in the Moonlight.jpg
+neoclassical         c2.jpg  3817x2561  CC0              Museo Correr Neoclassical ceiling 03032015 4.jpg
+neoclassical         c3.jpg  3444x2324  CC0              Museo Correr Neoclassical ceiling 03032015 5.jpg
+pixel-art            c1.jpg  1344x1088  CC BY-SA 4.0     Pixel art opened envelope on table.png
+pointilism           c1.jpg  2290x1080  CC BY 4.0        GIF com e sem pontilhamento.png
+pointilism           c2.jpg  3950x2788  CC BY-SA 3.0     Paul Gosselin - On the beach of Oostende - Impressionism,Pointillism 198
+pointilism           c3.jpg  4000x3000  CC BY-SA 4.0     Maximilien Luce Morning interieur.jpg
+pop-art              c1.jpg  1280x853  CC BY 2.0        Pintura em Pop Art para Elephant Parade.jpg
+shabby-chic          c1.jpg  2041x1021  CC0              Shabby chic coffee table.jpg
+shabby-chic          c3.jpg  3648x2432  CC BY 2.0        Shabby chic (6440373295).jpg
+steampunk            c1.jpg  4032x1960  CC0              Steampunk-Traktor Frank John-Lorenz 20191129 074146.jpg
+steampunk            c2.jpg  2526x1516  CC0              Thames steampunk vehicles.jpg
+steampunk            c3.jpg  5906x4183  CC BY-SA 4.0     "Einfach fantastisch!" Annotopia in Bad Mergentheim. 04.jpg
+surrealism           c1.jpg  5472x3648  CC0              Surrealism in photography 02.jpg
+surrealism           c2.jpg  5472x3648  CC0              Surrealism in photography 04.jpg
+surrealism           c3.jpg  5472x3648  CC0              Surrealism in photography 06.jpg
+synthwave            c1.jpg  4032x2100  CC BY-SA 4.0     Archura Catharsis.jpg
+synthwave            c2.jpg  4278x2426  CC BY-SA 4.0     Perturbator - Rock am Ring 2017-AL6980.jpg
+synthwave            c3.jpg  2048x1152  CC BY-SA 4.0     Ekynoxx live.jpg
+tenebrism            c1.jpg  2964x2223  Public domain    Iron Letters Old Swedes.JPG
+tenebrism            c2.jpg  14168x11528  Public domain    The Nightwatch by Rembrandt - Rijksmuseum.jpg
+utilitarian           (无候选)
+vaporwave            c1.jpg  7680x4320  CC BY 2.0        Vaporwave WP3 Print.jpg
+vaporwave            c2.jpg  1440x759  Public domain    Sample Vaporwave Artwork.png
+vaporwave            c3.jpg  1600x900  CC BY-SA 4.0     Vaporwave art example.png
+victorian            c1.jpg  4032x1816  CC BY-SA 4.0     VICTORIAN ERA ARCHITECTURE.jpg
+victorian            c2.jpg  3898x2054  CC BY 3.0        Windsor Castle Upper Ward Quadrangle 2 - Nov 2006.jpg
+victorian            c3.jpg  4160x2340  CC BY-SA 4.0     Victorian Architecture of Bay Ridge, Brooklyn.jpg
+y2k                  c1.jpg  5472x3072  CC0              Mechanical calculator, Y2k proof - 48929518383.jpg
+y2k                  c2.jpg  5516x3677  CC BY-SA 4.0     Y2K, Fremantle, 2021 (01).jpg
+y2k                  c3.jpg  4080x3056  CC BY 4.0        Y2k style jeans.jpg
